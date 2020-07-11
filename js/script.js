@@ -1,4 +1,6 @@
-
+// =========================================================================================================================== 
+// ======================================================   SECTION 1   ====================================================== 
+// ===========================================================================================================================
 
 var slideIndex = 0;
 
@@ -16,45 +18,33 @@ function showSlides() {
 }
 
 // =========================================================================================================================== 
-// =========================================================================================================================== 
-// =========================================================================================================================== 
+// ======================================================   SECTION 2   ====================================================== 
 // =========================================================================================================================== 
 
-
-// select all the buttons
 const buttons = document.querySelectorAll('button');
-// select the <input type="text" class="display" disabled> element
 const display = document.querySelector('.display');
 
-// add eventListener to each button
 buttons.forEach(function(button) {
   button.addEventListener('click', calculate);
 });
 
-// calculate function
 function calculate(event) {
-  // current clicked buttons value
   const clickedButtonValue = event.target.value;
 
   if (clickedButtonValue === '=') {
-    // check if the display is not empty then only do the calculation
     if (display.value !== '') {
-      // calculate and show the answer to display
       display.value = eval(display.value);
     }
   } else if (clickedButtonValue === 'C') {
-    // clear everything on display
-    display.value = '';
+      display.value = '';
   } else {
-    // otherwise concatenate it to the display
-    display.value += clickedButtonValue;
+      display.value += clickedButtonValue;
   }
 }
 
 // =========================================================================================================================== 
-// =========================================================================================================================== 
-// =========================================================================================================================== 
-// =========================================================================================================================== 
+// ======================================================   SECTION 3   ====================================================== 
+// ===========================================================================================================================
 
 const form = document.getElementById('id');
 var email = document.getElementById('email');
@@ -73,7 +63,7 @@ function showSuccess(input) {
 
 function checkEmail(input) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (re.test(input.value.trim())) {
+    if (re.test(input.value.trim())) {
     showSuccess(input);
   } else {
     showError(input, 'Email is not valid');
@@ -82,7 +72,7 @@ function checkEmail(input) {
 
 function checkRequired(inputArr) {
   inputArr.forEach(function(input) {
-    if (input.value.trim() === '') {
+      if (input.value.trim() === '') {
       showError(input, `${getFieldName(input)} is required`);
     } else {
       showSuccess(input);
