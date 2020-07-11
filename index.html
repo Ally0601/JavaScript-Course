@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.svg" type="image/gif" sizes="16x16">
+    
+
+    <title>Morosis</title>
+</head>
+<body>
+
+    <div class="section group">
+        <div class="col span_2_of_3">
+            <div class="form1" id="form1">
+                <form action="/">
+                  <input type="text" id="timeinterval" name="timeinterval" placeholder="Enter the time interval in seconds">
+                  <input type="button" onclick="showSlides()" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="col span_1_of_3">
+            <div class="slideshow-container">
+                <div class="mySlides fade"><img src="img/ss1.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss2.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss3.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss4.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss5.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss6.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss7.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss8.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss9.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss10.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss11.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss12.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss13.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss14.jpg" style="width:60%"></div>
+                <div class="mySlides fade"><img src="img/ss15.jpg" style="width:60%"></div>
+            </div>
+        </div>
+    </div>
+
+<!-- =========================================================================================================================== -->
+<!-- =========================================================================================================================== -->
+<!-- =========================================================================================================================== -->
+<!-- =========================================================================================================================== -->
+
+
+ <!-- calculator -->
+ <div class="calculator">
+
+    <!-- display -->
+    <input type="text" class="display" disabled>
+    <!-- keys -->
+    <div class="keys">
+      <!-- 4 rows of keys -->
+      <div class="row">
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button value="+" class="operator">+</button>
+      </div>
+      <div class="row">
+        <button value="4">4</button>
+        <button value="5">5</button>
+        <button value="6">6</button>
+        <button value="-" class="operator">-</button>
+      </div>
+      <div class="row">
+        <button value="1">1</button>
+        <button value="2">2</button>
+        <button value="3">3</button>
+        <button value="*" class="operator">*</button>
+      </div>
+      <div class="row">
+        <button value="C" class="operator">C</button>
+        <button value="0">0</button>
+        <button value="/" class="operator">/</button>
+        <button value="=" class="operator">=</button>
+      </div>
+    </div>
+
+  </div>
+  <!-- calculator body ends -->
+  
+
+<!-- =========================================================================================================================== -->
+<!-- =========================================================================================================================== -->
+<!-- =========================================================================================================================== -->
+<!-- =========================================================================================================================== -->
+
+    <div class="container">
+        <form class="form" id="id">
+            <div class="form-control">
+                <input onkeyup="emailVerification()" type="text" id="email" placeholder="Enter Email"><br>
+                <small>Error message</small>
+            </div>
+        </form>
+    </div>    
+    <script src="js/script.js"></script>
+</body>
+</html>
